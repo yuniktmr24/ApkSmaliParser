@@ -112,7 +112,6 @@ class SmaliParser():
                 corresponding_key = api_to_category_map.get(api, None)
                 found_privacy_practices.append(corresponding_key)
 
-            print(corresponding_key)
             first_files = self.first_file_with_match.values()
             df = pd.DataFrame({'Matched Privacy Categories': found_privacy_practices, 'Matched Privacy related APIs': found_privacy_apis, 'First File with Match': first_files})
             print(df)
